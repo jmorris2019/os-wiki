@@ -1,0 +1,73 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  margin-top: 0;
+}
+
+/*Nav layout and positioning*/
+nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  border-bottom: 1px solid var(--border-color-layout);
+  height: 80px;
+  position: fixed;
+  background-color: white;
+}
+
+/* Basic nav styling*/
+.nav-logo {
+  width: 35px;
+}
+.nav-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10%;
+  color: black;
+}
+.nav-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 10%;
+  color: black;
+}
+
+/* MAIN MENU */
+/* MAIN MENU */
+/* MAIN MENU */
+
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav-menu > li {
+  position: relative; /* Needed for the absolute dropdown */
+}
+
+.nav-menu a {
+  display: flex;
+  padding: .5em 0;  /* this is controlling the height of the navbar */
+  margin: 0 30px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  border-bottom: 2px solid rgb(173, 175, 179);
+}
+
+/* main layout - sidebar and content area */
+/* main layout - sidebar and content area */
+/* main layout - sidebar and content area */

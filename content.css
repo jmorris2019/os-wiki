@@ -1,0 +1,14 @@
+/* content styling */
+/* content styling */
+/* content styling */
+
+.content-main {
+  padding: 0px 30px 0px 30px;
+  overflow-y: auto;
+  height: 100vh;
+}
+.content-date {
+  color: var(--content-lastupdate);
+  font-style: italic;
+  margin: 20px 0px;
+}

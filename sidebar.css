@@ -1,0 +1,96 @@
+
+.layout-main {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  margin-top: 80px;
+}
+
+/* sidebar styling */
+/* sidebar styling */
+/* sidebar styling */
+
+.sb-main {
+  padding: 20px;
+  border-right: 1px solid var(--border-color-layout);
+  background-color: var(--sidebar-background-color);
+  overflow-y: auto;
+  height: 100vh;
+}
+
+
+.sb-main::-webkit-scrollbar {/* sidebar scrollbar appearance */
+  width: 12px;
+}
+
+.sb-main::-webkit-scrollbar-track {/* sidebar scrollbar appearance */
+  background: var(--sidebar-background-color);
+}
+
+.sb-main::-webkit-scrollbar-thumb {/* sidebar scrollbar appearance */
+  background-color: rgb(129, 96, 139);
+  border-radius: 14px;
+  transition: background-color .5s ease;
+  border: 2px solid var(--sidebar-background-color);
+}
+.sb-main::-webkit-scrollbar-thumb:hover {/* sidebar scrollbar appearance */
+  background-color: rgb(169, 143, 175);
+  transition: background-color .5s ease;
+}
+
+.sb-item-divider {/* controls spacing between sidebard dropdown items*/
+  padding: 4px 0px 4px 0px;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.sb-main-title {
+  width: 100%;
+  font-weight: bold;
+  color: var(--sidebar-text);
+  margin-bottom: 20px;
+}
+.sb-main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sb-section-title {
+  /* font-weight: bold; */
+  padding: 2px 0px; /* controls spacing between sidebar sections/categories*/
+  color: var(--sidebar-text);
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  cursor: pointer;
+}
+
+.sb-subsection {
+  text-decoration: none;
+  color: var(--sidebar-text);
+  margin-left: 36px;
+}
+
+
+/* Style and animate the Material icon */
+.material-symbols-outlined.chevron-icon {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+}
+
+/* Rotate the chevron when the drawer is open */
+.sb-drawer details[open] .chevron-icon {
+  transform: rotate(90deg);
+}
+.last {
+  margin-bottom: 30px;
+}
